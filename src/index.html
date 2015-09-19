@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--[flexible.js](http://gitlab.alibaba-inc.com/mtb/lib-flexible/raw/master/build/flexible.js)-->
+    <script>!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));</script>
+    <!--[flexible.css](http://gitlab.alibaba-inc.com/mtb/lib-flexible/raw/master/build/flexible.css)-->
+    <style>@charset "utf-8";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}</style>
+    <meta charset="utf-8">
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+
+    <title>我是April</title>
+
+    <link rel="stylesheet" href="http://g.alicdn.com/mtb/app.newbie.lingyu/0.0.2/css/main.css" data-htmlone="">
+
+</head>
+
+<body>
+    <div id = "test"></div>
+
+    <link href="http://g.tbcdn.cn/mtb/??ctrl-indicator/0.1.6/indicator.css" rel="stylesheet" type="text/css" />
+    <script src="http://g.tbcdn.cn/mtb/ctrl-indicator/0.1.6/indicator.js"></script>
+
+    <script src="http://g.tbcdn.cn/mtb/??lib-animation/2.0.5/animation.js,lib-cubicbezier/1.0.0/cubicbezier.js,lib-motion/1.0.5/motion.js,lib-gesture/1.1.11/gesture.js,ctrl-loading/0.1.11/loading.js,ctrl-loading/0.1.11/loading_css.js,lib-scroll/2.6.0/scroll.js,ctrl-scrollview/0.2.1/scrollview.js,ctrl-scrollview/0.2.1/scrollview_css.js,ctrl-carrousel/0.1.8/carrousel.js"></script>
+
+    <script src="http://g.tbcdn.cn/mtb/lib-windvane/2.0.3/windvane.js"></script>
+    <script src="http://g.tbcdn.cn/mtb/lib-login/1.4.2/login.js"></script>
+
+    <script id="content" type="text/template">
+
+        <div class="container"  style="width: 100%; overflow: hidden; ">
+            <div style="width: 100%;" id="container-y">
+                <div id="top-panel">
+                    <div class="circle" >
+                        <div style="width: 7.5rem; height: 5rem;  position: absolute;  margin-left: -1.5rem; margin-top: 0.3rem; z-index: 1; text-align: center; ">  
+                          <h1 style=""> 炩羽 </h1> 
+                          <p id="email" style=""> majingwen.jmjw@alibaba-inc.com</p>
+                          <p id="newpeople" style="">新人驾到</p>
+                        </div> 
+                    </div>     
+                    
+                    <a href="javascript:;" id="head-sculpture" ></a> 
+                    <div id="date" style="position: absolute; float: left; margin-left: 0.4rem; margin-top: 1.1rem; width: 0.73rem; line-height: 0.4rem;">
+                       <p id="y-date" style=""> 二零一五年 </p> <div style="height: 0.27rem; width: 0.13rem;"></div>
+                       <p id="m-date" style=""三月十五日 </p> <div style="height: 0.27rem; width: 0.13rem;"></div>
+                       <p id="w-date" style=""> 星期五</p>
+                    </div>
+                    <div style="position: absolute; margin-top: 6.5rem; width:10rem; margin-left: 1.2rem; margin-right: auto;">
+                        <h3 > 欢迎您：<p id="username" style="display: inline;"></p> 访问我的页面，新手上路，敬请拍砖</h3>
+                    </div>
+                    
+                    <button class="share" onclick="sharePage()"> 分享</button>
+                </div> 
+                
+                <div class="scroll-x sticky" style="height:0.95rem; background: #000;">
+                    <div id="scroll-wrap-x" style="width: 100%; height:0.95rem;">
+                        <div id="scroll-content-x" style="height:0.95rem; overflow: hidden; width: 1500px;">                   
+                            <ul id="scroll-ul" style="list-style: none;">
+                                <li id="scroll-li" style="width: 1.8rem; "><p>April</p></li> <li><p>Encho</p></li> <li ><p>Cindy</p></li> <li ><p>Kitty</p></li> <li><p>Sunday</p></li> <li><p>Carl</p></li>
+                                <li><p>petty</p></li> <li><p>Amy</p></li> <li><p>Sheldon </p></li> <li><p>Blank</p></li> <li><p>Rank </p></li> <li><p> Poll</p></li> <li><p>Blair</p></li> <li><p> Kate</p></li> <li><p>Harry</p></li> 
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="content" style="height: 2rem; margin-top: 0rem; display:table; width: 100%;">
+                    <div align="center" style="width:25%; float:left; display: table-cell; vertical-align: middle;" onclick="scrollEach('1')"> 
+                        <img class="icon" src="http://gw.alicdn.com/tfscom/TB1ZK0UIpXXXXboXVXXOyPdGpXX-140-140.jpg_90x90q50s150.jpg" style="padding-top: 0.2rem; width: 80%; "/> <h3 style="color: #808080; font-weight:100">我的照片</h3>
+                    </div>
+                    <div align="center" style="width:25%; float:left; display: table-cell; vertical-align: middle;" onclick="scrollEach('2')"> 
+                        <img class="icon" src="http://gw.alicdn.com/tfscom/TB1OA4PIpXXXXXPaXXXOyPdGpXX-140-140.jpg_90x90q50s150.jpg" style="padding-top: 0.2rem; width: 80%; "/> 
+                        <h3 style="color: #808080; font-weight:100">个人成长</h3>
+                    </div>
+                    <div align="center" style="width:25%; float:left; display: table-cell; vertical-align: middle; " onclick="scrollEach('3')"> 
+                        <img class="icon" src="http://gw.alicdn.com/tfscom/TB1bf1fIpXXXXbbXXXXOyPdGpXX-140-140.jpg_90x90q50s150.jpg" style="padding-top: 0.2rem; width: 80%; "/> 
+                        <h3 style="color: #808080; font-weight:100">心动接触</h3>
+                    </div>
+                    <div align="center" style="width:25%; float:left; display: table-cell; vertical-align: middle;" onclick="scrollEach('4')"> 
+                        <img class="icon" src="http://gw.alicdn.com/tfscom/TB1zX1cIpXXXXc0XXXXOyPdGpXX-140-140.jpg_90x90q50s150.jpg" style="padding-top: 0.2rem; width: 80%; "/> 
+                        <h3 style="color: #808080; font-weight:100">我型我秀</h3>
+                    </div>
+                </div>
+
+                 <div class="content " id = "anchor1" style="height: 8.5rem;" >
+                    <div style="width: 0.3rem; height: 1rem; background: #6FB2CB; float:left; display: inline;"> </div> <h2 style="float: left; display: inline;">第一印象</h2>
+                    <div align="center" id="slider" style="padding-top: 0.8rem; margin-left: 0rem; margin-right: 0.5rem; height: 8rem;" >
+                        <ul>
+                            <li style="width: 100%;">
+                                <img  style="width: 96%;" class="lazyimg" src="http://gw.alicdn.com/tfscom/TB1sGB1IpXXXXadXFXXX3a8GpXX-700-467.jpg_350x350q50s150.jpg" data-src="http://gw.alicdn.com/tfscom/TB1sGB1IpXXXXadXFXXX3a8GpXX-700-467.jpg_350x350q50s150.jpg">
+                            </li>
+                            <li style="width: 100%;">
+                                <img  style="width: 96%;" class="lazyimg" src="http://gw.alicdn.com/tfscom/TB1ISVOIpXXXXbyXVXXVbC7GpXX-700-462.jpg_350x350q50s150.jpg" data-src="http://gw.alicdn.com/tfscom/TB1ISVOIpXXXXbyXVXXVbC7GpXX-700-462.jpg_350x350q50s150.jpg" >
+                            </li>
+                            <li style="width: 100%;">
+                                <img style="width: 96%;" class="lazyimg" src="http://gw.alicdn.com/tfscom/TB1o0BUIpXXXXcMXFXX9053GpXX-700-438.jpg_350x350q50s150.jpg" data-src="http://gw.alicdn.com/tfscom/TB1o0BUIpXXXXcMXFXX9053GpXX-700-438.jpg_350x350q50s150.jpg">
+                            </li>
+                            <li style="width: 100%; ">
+                               <img  style="width: 96%;" class="lazyimg" src="http://gw.alicdn.com/tfscom/TB16ZpLIpXXXXcgXVXX9053GpXX-700-438.jpg_350x350q50s150.jpg" data-src="http://gw.alicdn.com/tfscom/TB16ZpLIpXXXXcgXVXX9053GpXX-700-438.jpg_350x350q50s150.jpg">
+                            </li>
+                        </ul>
+                        <div class="indicator" style="width: 100%; height: 0.25rem; position: absolute; z-index: 3; bottom: 1rem; text-align: center;"></div>
+                    </div>
+                </div>
+
+                <div class="content" id = "anchor2" >
+                    <div >
+                        <div style="width: 0.3rem; height: 1rem; background: #6FCB9C; float:left; display: inline;"> </div> <h2 style="float: left; display: inline;">个人成长</h2>
+                    </div>
+                    <div style="padding-top: 0.8rem;">
+                        <table class="table-1">
+                            <tr style="border-bottom: #A9A9A9 1px solid;">
+                                <td><img src="http://gw.alicdn.com/tfscom/TB1bIh3IpXXXXbTXFXXxzYyGpXX-700-689.jpg_150x150q50s150.jpg"/></td>
+                                <td style="width: 7.2rem; padding-left: 0.3rem;">
+                                    <h3>[lib-mtop]</h3><p>在浏览器中，会通过Ajax方式发起请求。</p>          
+                                </td>
+                            </tr>
+                            <tr style="border-bottom: #A9A9A9 1px solid;">
+                                <td><img src="http://gw.alicdn.com/tfscom/TB1bIh3IpXXXXbTXFXXxzYyGpXX-700-689.jpg_150x150q50s150.jpg" /></td>
+                                <td style="width: 7.2rem; padding-left: 0.3rem;">
+                                    <h3>[lib-mtop]</h3><p>在浏览器中，会通过Ajax方式发起请求。在手淘和天猫客户端中，会通过客户端原生接口发起请求（MtopPlugin）</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content" style="height: auto;" id = "anchor3" >
+                    <div style="display: inline;">
+                        <div style="width: 0.3rem; height: 1rem; background: #CB9E6F; float:left;"> </div> <h2 style="float:left">心动接触</h2>
+                    </div>
+                    <div class="heart-1" style="margin: 0.6rem 0.3rem 0.3rem 0.3rem; padding-top: 0.4rem; clear: both;">
+                        <div style="float: left;"><img style="width: 3.5rem; height: 3.5rem;" src="http://gw.alicdn.com/tfscom/TB1bIh3IpXXXXbTXFXXxzYyGpXX-700-689.jpg_250x250q50s150.jpg"/></div>
+                        <div style="float: left;"><p style="">VS</p></div>
+                        <div style="float: right;"><img style="float: right; width: 3.5rem; height: 3.5rem;" src="http://gw.alicdn.com/tfscom/TB1bIh3IpXXXXbTXFXXxzYyGpXX-700-689.jpg_250x250q50s150.jpg"/></div>
+                    </div>
+                    <div class="heart-2" style="margin: 4rem 0.3rem 0rem 0.3rem; "><p >刚开始觉得是那个样子的，后来发现是这个样子的；刚开始觉得是那个样子的，后来发现是这个样子的；刚开始觉得是那个样子的，后来发现是这个样子的； </p>
+                    </div>                
+               </div>
+
+                <div class="content" style="height: 6rem;" id = "anchor4" >
+                    <div style="">
+                        <div style="width: 0.3rem; height: 1rem; background: #CB6F91; float:left; display: inline;"> </div> <h2 style="float:left; display: inline;">我型我秀</h2>
+                    </div>
+                    <div class="mine" style="margin: 0rem 0.3rem 0.3rem 0.3rem; padding-top: 0.4rem; clear: both;">
+                        <div style="float: left; width: 48%; height: 5.1rem;">
+                            <img style="width: 100%; " src="http://gw.alicdn.com/tfscom/TB15s9eIpXXXXbKXXXXtX13GpXX-700-437.jpg_300x300q50s150.jpg"/>
+                            <p>这个作品是……</p>
+                        </div>
+                        <div style="float: right; width: 48%; height: 5.1rem; padding-bottom: 0.5rem;">
+                            <img style="width: 100%;" src="http://gw.alicdn.com/tfscom/TB15s9eIpXXXXbKXXXXtX13GpXX-700-437.jpg_300x300q50s150.jpg"/>
+                            <p>这个作品是……</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </script>
+
+
+    <script src="http://g.alicdn.com/mtb/app.newbie.lingyu/0.0.2/js/page.js"></script>   
+
+
+</body>
+</html>

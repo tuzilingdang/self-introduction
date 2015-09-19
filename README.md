@@ -1,2 +1,10 @@
-# self-introduction
-A self-introduction demo on mobile page , which can be seen online;
+# majingwen.jmjw/app-newbie-lingyu
+test
+
+
+## Usage
+
+
+## License
+
+MIT
